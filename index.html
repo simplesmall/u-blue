@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="js/main.css">
+
+    <meta name="viewport" content="width=device-width initial-scale=1">
+<!-- ######################################## -->
+<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#E6E6FA">
+<meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#E6E6FA">
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js').then(function(registration) {
+      // Registration was successful
+      console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+      // registration failed :(
+      console.log('ServiceWorker registration failed: ', err);
+    });
+  });
+}
+</script>
+<!-- ######################### -->
+</head>
+
+
+<body>
+<ul id="menu">
+    <li><a href="loop.html"><p>Main</p></a></li>
+    <li><a href="loop.html"><p>back</p></a></li>
+    <li><a href="loop.html"><p>vol-</p></a></li>
+    <li><a href="loop.html"><p>vol+</p></a></li>
+</ul>
+<ul id="choose">
+    <li id="brand"><div id="block"><a href="loop.html"><p>品牌文化</p></a></div></li>
+    <li id="star"><div id="block"><a href="loop.html"><p>明星项目</p></a></div></li>
+    <li id="expert"><div id="block"><a href="loop.html"><p>精品项目</p></a></div></li>
+</ul>
+<video autoplay loop muted>
+    <source src="js/show.mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+</video>
+</body>
+<script src="js/jquery.js"></script>
+<script>
+    // $('#block').click(function () {
+    //     alert(this.id)
+    // });
+</script>
+</html>

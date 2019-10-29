@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+video {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    /*加滤镜*/
+    /*filter: blur(15px); //背景模糊设置 */
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter:grayscale(100%); //背景灰度设置*/
+    z-index: -11
+}
+
+source {
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+#choose {
+    padding-left: 600px;
+    padding-top: 300px;
+}
+
+#choose li {
+    list-style: none; /* 将默认的列表符号去掉 */
+    padding: 50px; /* 将默认的内边距去掉 */
+    margin: 80px;
+    float: left;
+    font-size: 30px;
+    color: white;
+}
+#block{
+        padding:5px;
+        height: 49px;
+        width: 124px;
+        background-color: mediumpurple;
+    }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+#menu {
+    padding-left: 75%;
+    padding-top: 10px;
+}
+#menu li{
+    float: left;
+    list-style: none; /* 将默认的列表符号去掉 */
+    padding: 30px;
+}
+
+#menu p{
+    color: white;
+    font-size: 24px;
+}
