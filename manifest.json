@@ -10,7 +10,7 @@
 
  "icons": [
    {
-     "src":"icons/wcls-logo-512.png",
+     "src":"/icons/wcls-logo-512.png",
      "sizes": "512x512",
      "type": "image\/png"
    },
