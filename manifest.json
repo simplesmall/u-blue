@@ -3,14 +3,14 @@
     "short_name": "Web Leaders",
     "description": "Web Community Leaders landing page",
     "lang": "en-GB",
-    "start_url": "/",
+    "start_url": ".",
     "display": "standalone",
     "theme_color": "#E6E6FA",
     "background_color": "#E6E6FA",
 
  "icons": [
    {
-     "src":".\/icons/wcls-logo-512.png",
+     "src":"icons/wcls-logo-512.png",
      "sizes": "512x512",
      "type": "image\/png"
    }
